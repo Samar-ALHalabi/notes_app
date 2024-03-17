@@ -9,17 +9,17 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Home());
+    return const MaterialApp(home: Notes_App());
   }
 }
 
-class Home extends StatelessWidget {
-  const Home({Key? key}) : super(key: key);
+class Notes_App extends StatelessWidget {
+  const Notes_App({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(backgroundColor: Colors.amberAccent),
-        drawer: const Drawer(backgroundColor: Colors.blue));
+       
   }
 }
