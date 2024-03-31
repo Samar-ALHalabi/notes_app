@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moasker/views/widgets/notesviewbody.dart';
+import 'package:moasker/views/widgets/notesview.dart';
 
 void main() {
   runApp(const Notes_App());
@@ -13,6 +13,6 @@ class Notes_App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         theme: ThemeData(brightness: Brightness.dark, fontFamily: 'Poppins'),
-        home: const NotesVeiwBody());
+        home: const NotesView());
   }
 }
