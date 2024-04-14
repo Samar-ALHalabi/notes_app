@@ -20,9 +20,16 @@ class EditViewBody extends StatelessWidget {
             icons: Icons.check,
           ),
           SizedBox(
+            height: 20,
+          ),
+          CustomTextField(hint: 'title'),
+          SizedBox(
             height: 16,
           ),
-          CustomTextField(hint: 'hh')
+          CustomTextField(
+            hint: 'content',
+            maxline: 5,
+          )
         ],
       ),
     );
