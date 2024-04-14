@@ -15,7 +15,10 @@ class NotesVeiwBody extends StatelessWidget {
             SizedBox(
               height: 10,
             ),
-            CustomAppBar(),
+            CustomAppBar(
+              title: 'Notes',
+              icons: Icons.search,
+            ),
             SizedBox(
               height: 20,
             ),

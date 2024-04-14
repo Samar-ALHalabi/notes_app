@@ -1,18 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:moasker/views/widgets/customsearchicon.dart';
 
+// ignore: must_be_immutable
 class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({super.key});
+  final String title;
+  final IconData icons;
+  const CustomAppBar({required this.title, required this.icons, super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const Row(children: [
+    return Row(children: [
       Text(
-        'Notes',
-        style: TextStyle(fontSize: 28, color: Colors.white),
+        title,
+        style: const TextStyle(fontSize: 28, color: Colors.white),
       ),
-      Spacer(),
-      CustomSearchIcon(),
+      const Spacer(),
+      CustomSearchIcon(
+        icons: icons,
+      ),
     ]);
   }
 }
